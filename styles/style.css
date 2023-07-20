@@ -331,6 +331,60 @@ a {
     margin-top: 5%;
 }
 
+/* Careers Section CSS */
+.careers {
+    background-color: #FF42A5;
+    color: #fff;
+}
+.careers-main {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.careers-main .careers-inner-div h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.careers-main .careers-inner-div p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.careers-main .careers-inner-div .careers-lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.careers-main .careers-inner-div .careers-lists ul:nth-child(2){
+    text-align: right;
+}
+
+.careers-main .careers-inner-div .careers-lists ul li a {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.careers-main .careers-inner-div button {
+    background-color: #fff;
+    color: #FF42A5;
+    padding: 20px 30px;
+    margin-top: 50px;
+}
+
+.careers-main .careers-inner-div button:hover {
+    background-color: #FF42A5;
+    color: #fff;
+}
+
+.careers-inner-div img {
+    width: 100%;
+}
+
 /* Category Section */
 .category-main {
     margin-top: 100px;
@@ -373,59 +427,70 @@ a {
     color: #fff;
 }
 
-.footer-nav nav ul {
+.footer-nav nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
-.footer-nav nav ul li a {
+.footer-nav nav a {
     font-size: 1.2rem;
     font-weight: 600;
     color: #fff;
 }
 
-.footer-main .social-media ul {
+.footer-main .social-media{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.footer-main .social-media ul li a i {
+.footer-main .social-media a i {
     font-size: 40px;
 }
-.footer-main .social-media ul li:nth-child(1) a i {
+.footer-main .social-media a:nth-child(1) {
     color: #fff;
 }
 
-.footer-main .social-media ul li:nth-child(2) a i {
+.footer-main .social-media a:nth-child(2) {
     color: #1877F2;
 }
 
-.footer-main .social-media ul li:nth-child(3) a i {
+.footer-main .social-media a:nth-child(3) {
     color: #FF0000;
 }
 
-.footer-main .social-media ul li:nth-child(4) a i  {
+.footer-main .social-media a:nth-child(4) {
     color: #0077B5;
 }
 
-.footer-main .social-media ul li:nth-child(5) a i  {
+.footer-main .social-media a:nth-child(5) {
     color: #fff;
 }
 
-.footer-main .social-media ul li:nth-child(6) a i  {
+.footer-main .social-media a:nth-child(6) {
     color: #fff;
 }
 
-.about-section ul {
+.about-section {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
 }
 
-.about-section ul li a {
+.about-section a {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+}
+
+.copyright-section {
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: rgba(255, 255, 255, 0.60);
     font-size: 1rem;
 }
@@ -437,7 +502,7 @@ a {
     section {
         padding: 10px;
     }
-    .nav-bar, ul, .poster-main{
+    .nav-bar, ul, .poster-main,.careers-main, .careers-lists{
         text-align: center;
         flex-direction: column;
     }
@@ -456,6 +521,11 @@ a {
     .gamer-inner-div:nth-child(2) p {
         width: 100%;
         padding-left: 0;
+    }
+
+    .gamer-inner-div .btn-primary {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .card-div {
@@ -509,6 +579,16 @@ a {
     .category-main {
         width: 100%;
     }
+    .careers-main {
+        display: flex;
+        flex-direction: column;
+    }
+    .careers-inner-div {
+        padding-top: 50px;
+    }
+    .careers-main .careers-inner-div .careers-lists ul:nth-child(2){
+        text-align: center;
+    }
 }
 
 /* Tablet View */
@@ -529,6 +609,10 @@ a {
     .gamer-inner {
         text-align: center;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .gamer-inner-div .btn-primary {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .card-div {
         grid-template-columns: repeat(2, 1fr);
@@ -579,6 +663,13 @@ a {
     }
     .category-main {
         width: 100%;
+    }
+    .careers-main {
+        display: flex;
+        flex-direction: column;
+    }
+    .careers-inner-div {
+        padding-top: 50px;
     }
 }
 
